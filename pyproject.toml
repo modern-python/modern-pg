@@ -1,5 +1,5 @@
 [project]
-name = "sa-utils"
+name = "modern-pg"
 description = "PostgreSQL Tools"
 authors = [
     { name = "Artur Shiriev", email = "me@shiriev.ru" },
@@ -22,7 +22,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 packages = [
-    { include = "sa_utils" },
+    { include = "modern_pg" },
 ]
 dependencies = [
     "tenacity",

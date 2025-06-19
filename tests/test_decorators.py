@@ -3,7 +3,7 @@ import sqlalchemy
 from sqlalchemy.exc import DBAPIError
 from sqlalchemy.ext import asyncio as sa_async
 
-from sa_utils.decorators import postgres_reconnect, transaction_retry
+from modern_pg.decorators import postgres_reconnect, transaction_retry
 
 
 @pytest.mark.parametrize(

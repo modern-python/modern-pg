@@ -7,7 +7,7 @@ import pytest
 import sqlalchemy
 from sqlalchemy.ext import asyncio as sa_async
 
-from sa_utils.connections import build_connection_factory
+from modern_pg.connections import build_connection_factory
 
 
 async def test_connection_factory_success() -> None:
