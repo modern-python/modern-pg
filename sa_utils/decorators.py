@@ -6,7 +6,7 @@ import asyncpg
 import tenacity
 from sqlalchemy.exc import DBAPIError
 
-from pg_tools import settings
+from sa_utils import settings
 
 
 P = typing.ParamSpec("P")

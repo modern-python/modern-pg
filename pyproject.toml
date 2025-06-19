@@ -1,5 +1,5 @@
 [project]
-name = "pg-tools"
+name = "sa-utils"
 description = "PostgreSQL Tools"
 authors = [
     { name = "Artur Shiriev", email = "me@shiriev.ru" },
@@ -22,7 +22,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 packages = [
-    { include = "pg_tools" },
+    { include = "sa_utils" },
 ]
 dependencies = [
     "tenacity",
@@ -31,7 +31,7 @@ dependencies = [
 ]
 
 [project.urls]
-repository = "https://github.com/modern-python/pg-tools"
+repository = "https://github.com/modern-python/sa-utils"
 
 [tool.uv]
 dev-dependencies = [

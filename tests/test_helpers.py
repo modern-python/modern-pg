@@ -1,6 +1,6 @@
 import typing
 
-from pg_tools import helpers, is_dsn_multihost
+from sa_utils import helpers, is_dsn_multihost
 
 
 def test_build_db_dsn() -> None:
