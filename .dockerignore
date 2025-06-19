@@ -1,0 +1,15 @@
+.env
+.coverage
+.gitignore
+.idea
+.mypy_cache
+.ruff_cache
+.vscode
+.git
+.pytest_cache
+.DS_Store
+*.yml
+Dockerfile
+**/__pycache__
+.hypothesis
+.venv

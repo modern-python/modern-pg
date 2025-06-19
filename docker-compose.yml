@@ -1,0 +1,26 @@
+services:
+  application:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    volumes:
+      - .:/srv/www/
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DB_DSN=postgresql+asyncpg://postgres:password@db/postgres
+    stdin_open: true
+    tty: true
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=password
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 1s
+      timeout: 5s
+      retries: 15
