@@ -1,4 +1,4 @@
-# pg-tools
+# modern-pg
 
 This library provides retry decorators for sqlalchemy and some helpers
 
