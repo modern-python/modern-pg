@@ -86,3 +86,8 @@ asyncio_default_fixture_loop_scope = "function"
 
 [tool.coverage.run]
 concurrency = ["thread", "greenlet"]
+
+[tool.coverage.report]
+exclude_also = [
+    "if typing.TYPE_CHECKING:",
+]

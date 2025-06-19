@@ -7,8 +7,7 @@ sh:
     docker compose run --service-ports application bash
 
 test *args: down && down
-    docker compose run application uv run pytest {{ args }}
-
+    docker compose run application uv run --no-sync pytest {{ args }}
 
 build:
     docker compose build application
