@@ -46,8 +46,7 @@ jobs:
       - run: uv python install 3.13
       - run: |
           uv sync --all-extras --frozen --no-install-project
-          uv run alembic upgrade head
-          uv run pytest . --cov=. --cov-report xml
+          uv run --no-sync pytest . --cov=. --cov-report xml
         env:
           PYTHONDONTWRITEBYTECODE: 1
           PYTHONUNBUFFERED: 1
